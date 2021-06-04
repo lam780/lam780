@@ -1,0 +1,33 @@
+﻿vấn đền giao tiếp nhập xuất giữa  người dùng và websever
+mô hình nhập liệu và tiếp nhận dữ liệu của webserver thông qua 2 con đường sau :
+
++ POST <gửi form nhập liệu tới webserver>
++ GET  <gửi thông qua liên kết url>
+
+1. chức năng :
+ - Nhận về các giá trị khi người dùng Submit đi :
+ ví dụ: khi người dùng điền form đăng ký tài khoản và nhấn submit thông tin sẽ được gửi đến webserver qua đối tượng Request 
+ với 2 hình thức :
+ cách 1 :
+ + khi người dùng nhập các thông tin trong các textbox hoặc các input<html>  sau đó gửi thông tin này đến cho 1 trang asp khác 
+   khi đó người ta gọi đó là kiểu post
+cách 2 :
+ + thông tin có thể gửi tới trang khác bằng cách gắn vào sau mỗi url của trang đó . ví dụ để gửi thông tin là HOTEN và TUOI  tương 
+   ứng là trantronglam là 21 tuoi ta se lam nhu sau :
+ + xuly.asp?HOTEN=trantronglam&TUOI=21
+
+ cú pháp để gắn vào trang nhận như sau:
+ trangnhan.asp?thuộc tính 1 = giá trị 1 & thuộc tính 2 = giá trị 2 .....
+
++ nhận xét trang 15 
+gửi dữ liệu theo kiểu post khi nào và theo kiểu get khi nào 
+- theo kiểu post :
+	khi ta cần chuyển 1 dưc liệu đi với đường link ngắn gọn 
+	với phương thức post thì ta có thể post lại chính trang web đó :điều này thường thấy ở những trang login còn với những trang nhiều xử lý thì ta lên tạo trang riêng 
+- theo kiểu get:
+	Thông tin được chuyển đi theo dạng hyperlink 
+	cách này thường được sử dụng với những trang có lượng sản phẩm được kiểm soát 
+	vd: https://www.youtube.com/watch?v=bmVKaAV_7-A
+	số lượng video của youtube cả triệu video để thống nhất 1 cách gửi đến trình duyệt khách họ chọn gửi bằng bằng phương thức get 
+
+

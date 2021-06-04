@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F68975BB-B094-4F39-AD8A-3A0891246427}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ASP.NET</RootNamespace>
+    <AssemblyName>ASP.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44368</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ASP.NET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ASP.NET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="ly_Thuyet\1_Doi_Tuong_Response\2,1%28Phuong_Thuc_Write%29\helloth24,23.aspx" />
+    <Content Include="ly_Thuyet\1_Doi_Tuong_Response\2,1%28Phuong_Thuc_Write%29\write.aspx" />
+    <Content Include="ly_Thuyet\1_Doi_Tuong_Response\2,2%28Phuong_Thuc_Redirect%29\trang1.aspx" />
+    <Content Include="ly_Thuyet\1_Doi_Tuong_Response\2,2%28Phuong_Thuc_Redirect%29\trang2.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version1.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version2.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version3\Nhap_Nam_Sinh.html" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version3\Tinh_Tuoi_version3.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_1\Thu_Cong\Tinh_Tuoi%28get%29.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_1\Tu_dong\Tinh_Tuoi%28get%29.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_gop\250_47056_msi_gt_1030_aero_itx_01.jpg" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_gop\250_54164_quadro_p2200_gigabyte_box.jpg" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_gop\250_56705_card_man_hinh_gigabyte_rx_6800_xt_gaming_oc_1.jpg" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_gop\Show_Product.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\250_47056_msi_gt_1030_aero_itx_01.jpg" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\250_54164_quadro_p2200_gigabyte_box.jpg" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\250_56705_card_man_hinh_gigabyte_rx_6800_xt_gaming_oc_1.jpg" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\Hien_Thi.html" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\Xu_ly.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\bai_tap_trang_15\Bai_%28post%29\maytinh.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\lý thuyết.txt" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\trang1.aspx" />
+    <Content Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\trang2.aspx" />
+    <Content Include="ly_Thuyet\3_Doi_Tuong_Server\1.Phuong_Thuc_mappth\Duong_Dan_Vat_Ly.aspx" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Global.asax" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Demo_Session.aspx" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\home.html" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\Sai_Mat_Khau.html" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\Login.html" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\Login.aspx" />
+    <Content Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\login.css" />
+    <Content Include="ly_Thuyet\5_Doi_Tuong_Application\1_Doi_Tuong_Application\Dem_So_Nguoi_Truy_Cap.aspx" />
+    <Content Include="ly_Thuyet\5_Doi_Tuong_Application\Vi_Du_Tong_Hop\home.aspx" />
+    <Content Include="ly_Thuyet\6_Chen_File_Vao_Trang_ASP\footer.html" />
+    <Content Include="ly_Thuyet\6_Chen_File_Vao_Trang_ASP\home1.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="WebForm5.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="home.aspx.designer.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,1%28Phuong_Thuc_Write%29\helloth24,23.aspx.designer.vb">
+      <DependentUpon>helloth24,23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,1%28Phuong_Thuc_Write%29\helloth24,23.aspx.vb">
+      <DependentUpon>helloth24,23.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,1%28Phuong_Thuc_Write%29\write.aspx.designer.vb">
+      <DependentUpon>write.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,1%28Phuong_Thuc_Write%29\write.aspx.vb">
+      <DependentUpon>write.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,2%28Phuong_Thuc_Redirect%29\trang1.aspx.designer.vb">
+      <DependentUpon>trang1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,2%28Phuong_Thuc_Redirect%29\trang1.aspx.vb">
+      <DependentUpon>trang1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,2%28Phuong_Thuc_Redirect%29\trang2.aspx.designer.vb">
+      <DependentUpon>trang2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\1_Doi_Tuong_Response\2,2%28Phuong_Thuc_Redirect%29\trang2.aspx.vb">
+      <DependentUpon>trang2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\trang1.aspx.designer.vb">
+      <DependentUpon>trang1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\trang1.aspx.vb">
+      <DependentUpon>trang1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\trang2.aspx.designer.vb">
+      <DependentUpon>trang2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\trang2.aspx.vb">
+      <DependentUpon>trang2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version1.aspx.designer.vb">
+      <DependentUpon>Tinh_Tuoi_version1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version1.aspx.vb">
+      <DependentUpon>Tinh_Tuoi_version1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version2.aspx.designer.vb">
+      <DependentUpon>Tinh_Tuoi_version2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version2.aspx.vb">
+      <DependentUpon>Tinh_Tuoi_version2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version3\Tinh_Tuoi_version3.aspx.designer.vb">
+      <DependentUpon>Tinh_Tuoi_version3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.1Thuoc_Tinh_form\vi_du_\Tinh_Tuoi_version3\Tinh_Tuoi_version3.aspx.vb">
+      <DependentUpon>Tinh_Tuoi_version3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_1\Thu_Cong\Tinh_Tuoi%28get%29.aspx.designer.vb">
+      <DependentUpon>Tinh_Tuoi%28get%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_1\Thu_Cong\Tinh_Tuoi%28get%29.aspx.vb">
+      <DependentUpon>Tinh_Tuoi%28get%29.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_1\Tu_dong\Tinh_Tuoi%28get%29.aspx.designer.vb">
+      <DependentUpon>Tinh_Tuoi%28get%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_1\Tu_dong\Tinh_Tuoi%28get%29.aspx.vb">
+      <DependentUpon>Tinh_Tuoi%28get%29.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_gop\Show_Product.aspx.designer.vb">
+      <DependentUpon>Show_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_gop\Show_Product.aspx.vb">
+      <DependentUpon>Show_Product.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\Xu_ly.aspx.designer.vb">
+      <DependentUpon>Xu_ly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\2.2Thuoc_tinh_QueryString\Vi_Du_2\Hien_Thi_San_Pham_tach\Xu_ly.aspx.vb">
+      <DependentUpon>Xu_ly.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\bai_tap_trang_15\Bai_%28post%29\maytinh.aspx.designer.vb">
+      <DependentUpon>maytinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\2_Doi_Tuong_Request\bai_tap_trang_15\Bai_%28post%29\maytinh.aspx.vb">
+      <DependentUpon>maytinh.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\3_Doi_Tuong_Server\1.Phuong_Thuc_mappth\Duong_Dan_Vat_Ly.aspx.designer.vb">
+      <DependentUpon>Duong_Dan_Vat_Ly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\3_Doi_Tuong_Server\1.Phuong_Thuc_mappth\Duong_Dan_Vat_Ly.aspx.vb">
+      <DependentUpon>Duong_Dan_Vat_Ly.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Demo_Session.aspx.designer.vb">
+      <DependentUpon>Demo_Session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Demo_Session.aspx.vb">
+      <DependentUpon>Demo_Session.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\4_Doi_Tuong_Session%28Bien_Session%29\Vi_Du\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\5_Doi_Tuong_Application\1_Doi_Tuong_Application\Dem_So_Nguoi_Truy_Cap.aspx.designer.vb">
+      <DependentUpon>Dem_So_Nguoi_Truy_Cap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\5_Doi_Tuong_Application\1_Doi_Tuong_Application\Dem_So_Nguoi_Truy_Cap.aspx.vb">
+      <DependentUpon>Dem_So_Nguoi_Truy_Cap.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\5_Doi_Tuong_Application\Vi_Du_Tong_Hop\home.aspx.designer.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\5_Doi_Tuong_Application\Vi_Du_Tong_Hop\home.aspx.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\6_Chen_File_Vao_Trang_ASP\footer.aspx.designer.vb">
+      <DependentUpon>footer.html</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\6_Chen_File_Vao_Trang_ASP\footer.aspx.vb">
+      <DependentUpon>footer.html</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ly_Thuyet\6_Chen_File_Vao_Trang_ASP\home1.aspx.designer.vb">
+      <DependentUpon>home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ly_Thuyet\6_Chen_File_Vao_Trang_ASP\home1.aspx.vb">
+      <DependentUpon>home1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyModule1.vb" />
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ly_Thuyet\7_Ket_Noi_CSDL\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56019</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44368/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
